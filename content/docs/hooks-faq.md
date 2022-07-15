@@ -41,7 +41,7 @@ prev: hooks-reference.html
   * [Як я можу реалізувати getDerivedStateFromProps?](#how-do-i-implement-getderivedstatefromprops)
   * [Чи є щось схоже на forceUpdate?](#is-there-something-like-forceupdate)
   * [Чи можу я зробити реф на функціональний компонент?](#can-i-make-a-ref-to-a-function-component)
-  * [Як я можу обмежити вузол DOM?](#how-can-i-measure-a-dom-node)
+  * [Як я можу заміряти вузол DOM?](#how-can-i-measure-a-dom-node)
   * [Що означає const [thing, setThing] = useState()?](#what-does-const-thing-setthing--usestate-mean)
 * **[Оптимізація продуктивності](#performance-optimizations)**
   * [Чи можу я пропустити ефект при оновленні?](#can-i-skip-an-effect-on-updates)
@@ -463,7 +463,7 @@ function ScrollView({row}) {
 
 Хоча це і не потрібно надто часто, ви можете надати деякі імперативні методи батьківському компоненту, використавши хук [`useImperativeHandle`](/docs/hooks-reference.html#useimperativehandle).
 
-### Як я можу обмежити вузол DOM? {#how-can-i-measure-a-dom-node}
+### Як я можу заміряти вузол DOM? {#how-can-i-measure-a-dom-node}
 
 Один рудиментарний спосіб для виміру положення чи розміру вузла DOM, ви можете використати [реф зворотнього виклику](/docs/refs-and-the-dom.html#callback-refs). React викличе функцію зворотнього виклику кожного разу, коли реф прикріплюється до іншого вузла. Ось [невеличка демонстрація](https://codesandbox.io/s/l7m0v5x4v9):
 
